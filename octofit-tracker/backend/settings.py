@@ -1,0 +1,1 @@
+ALLOWED_HOSTS = ['fictional-potato-r5x9vww65rv296v-8000.app.github.dev', 'localhost']

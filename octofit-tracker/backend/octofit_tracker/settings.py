@@ -10,7 +10,7 @@ SECRET_KEY = "your-secret-key"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'fictional-potato-r5x9vww65rv296v-8000.app.github.dev']
 
 # Application definition
 INSTALLED_APPS = [

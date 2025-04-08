@@ -1,17 +1,17 @@
+from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from . import views
+from .views import UserViewSet, TeamViewSet, ActivityViewSet, LeaderboardViewSet, WorkoutViewSet, api_root
 
-# Create a router and register our viewsets with it.
 router = DefaultRouter()
-router.register(r'users', views.UserViewSet)
-router.register(r'teams', views.TeamViewSet)
-router.register(r'activity', views.ActivityViewSet)
-router.register(r'leaderboard', views.LeaderboardViewSet)
-router.register(r'workouts', views.WorkoutViewSet)
+router.register(r'users', UserViewSet)
+router.register(r'teams', TeamViewSet)
+router.register(r'activities', ActivityViewSet)
+router.register(r'leaderboard', LeaderboardViewSet)
+router.register(r'workouts', WorkoutViewSet)
 
-# The API URLs are now determined automatically by the router.
 urlpatterns = [
-    path('', include(router.urls)),
-    path('api-root/', views.api_root, name='api-root'),
+    path('', api_root, name='api-root'),
+    path('admin/', admin.site.urls),
+    path('api/', include(router.urls)),
 ]

@@ -3,8 +3,9 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 50px;
+  margin-right: 10px;
+  float: left;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +36,70 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Updated styles for OctoFit Tracker */
+body {
+  background-color: #f0f8ff; /* Light blue background */
+  color: #333; /* Dark text color */
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50; /* Darker blue for headings */
+}
+
+.navbar {
+  background-color: #34495e; /* Dark blue for navigation menu */
+}
+
+.navbar .nav-link {
+  color: #ecf0f1; /* Light text for links */
+}
+
+.navbar .nav-link:hover {
+  color: #1abc9c; /* Green hover effect */
+}
+
+button {
+  background-color: #1abc9c; /* Green buttons */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #16a085; /* Darker green on hover */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #34495e; /* Dark blue for table headers */
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray for even rows */
+}
+
+table tr:hover {
+  background-color: #ddd; /* Highlight on hover */
+}
+
+.favicon {
+  width: 32px;
+  height: 32px;
 }

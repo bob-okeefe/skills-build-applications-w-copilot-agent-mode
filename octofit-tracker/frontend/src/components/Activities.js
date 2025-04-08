@@ -10,13 +10,24 @@ function Activities() {
   }, []);
 
   return (
-    <div>
-      <h1>Activities</h1>
-      <ul>
-        {activities.map(activity => (
-          <li key={activity.id}>{activity.name}</li>
-        ))}
-      </ul>
+    <div className="card">
+      <div className="card-body">
+        <h1 className="card-title">Activities</h1>
+        <table className="table table-striped">
+          <thead>
+            <tr>
+              <th>Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            {activities.map(activity => (
+              <tr key={activity.id}>
+                <td>{activity.name}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
